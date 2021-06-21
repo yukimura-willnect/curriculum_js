@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <input class="btn" type="button" value="ボタン" onClick="changeBtn()">
+    <p id="p1">ボタンが押されると表示非表示が切り替わります。</p>
+    <style>
+        .btn {    
+            background-color:white;
+        }
+
+        .btn:active {
+        background-color:blue;
+        }
+    </style>
+    <script>
+        function changeBtn() {
+            let change = document.getElementById('p1');
+            if(p1.style.display == 'none'){
+                document.getElementById('p1').style.display ='block'
+            } else {
+                document.getElementById('p1').style.display ='none'
+            }
+        }
+    </script>
+</body>
+</html>
